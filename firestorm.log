@@ -1,0 +1,305 @@
+DEBUG main org.hibernate.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+DEBUG main org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: top.kgoogle.test.user
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from user where id =?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select user_.id, user_.name as name2_0_, user_.pwd as pwd3_0_, user_.level as level4_0_ from user user_ where user_.id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into user (name, pwd, level, id) values (?, ?, ?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update user set name=?, pwd=?, level=? where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from user where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into user (name, pwd, level) values (?, ?, ?)
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@304b9f1a]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pwd
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : level
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=top.kgoogle.test.user)
+    - Returns
+       - EntityReturnImpl(entity=top.kgoogle.test.user, querySpaceUid=<gen:0>, path=top.kgoogle.test.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=top.kgoogle.test.user)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity top.kgoogle.test.user [NONE]: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6622a690]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pwd
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : level
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=top.kgoogle.test.user)
+    - Returns
+       - EntityReturnImpl(entity=top.kgoogle.test.user, querySpaceUid=<gen:0>, path=top.kgoogle.test.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=top.kgoogle.test.user)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity top.kgoogle.test.user [READ]: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@497570fb]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pwd
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : level
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=top.kgoogle.test.user)
+    - Returns
+       - EntityReturnImpl(entity=top.kgoogle.test.user, querySpaceUid=<gen:0>, path=top.kgoogle.test.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=top.kgoogle.test.user)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity top.kgoogle.test.user [UPGRADE]: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3249a1ce]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pwd
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : level
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=top.kgoogle.test.user)
+    - Returns
+       - EntityReturnImpl(entity=top.kgoogle.test.user, querySpaceUid=<gen:0>, path=top.kgoogle.test.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=top.kgoogle.test.user)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity top.kgoogle.test.user [UPGRADE_NOWAIT]: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2f4919b0]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pwd
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : level
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=top.kgoogle.test.user)
+    - Returns
+       - EntityReturnImpl(entity=top.kgoogle.test.user, querySpaceUid=<gen:0>, path=top.kgoogle.test.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=top.kgoogle.test.user)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity top.kgoogle.test.user [UPGRADE_SKIPLOCKED]: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@75b21c3b]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pwd
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : level
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=top.kgoogle.test.user)
+    - Returns
+       - EntityReturnImpl(entity=top.kgoogle.test.user, querySpaceUid=<gen:0>, path=top.kgoogle.test.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=top.kgoogle.test.user)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity top.kgoogle.test.user [FORCE]: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@155d1021]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pwd
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : level
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=top.kgoogle.test.user)
+    - Returns
+       - EntityReturnImpl(entity=top.kgoogle.test.user, querySpaceUid=<gen:0>, path=top.kgoogle.test.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=top.kgoogle.test.user)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity top.kgoogle.test.user [PESSIMISTIC_READ]: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=? lock in share mode
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2e647e59]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pwd
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : level
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=top.kgoogle.test.user)
+    - Returns
+       - EntityReturnImpl(entity=top.kgoogle.test.user, querySpaceUid=<gen:0>, path=top.kgoogle.test.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=top.kgoogle.test.user)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity top.kgoogle.test.user [PESSIMISTIC_WRITE]: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@51e37590]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pwd
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : level
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=top.kgoogle.test.user)
+    - Returns
+       - EntityReturnImpl(entity=top.kgoogle.test.user, querySpaceUid=<gen:0>, path=top.kgoogle.test.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=top.kgoogle.test.user)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity top.kgoogle.test.user [PESSIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@701a32]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pwd
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : level
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=top.kgoogle.test.user)
+    - Returns
+       - EntityReturnImpl(entity=top.kgoogle.test.user, querySpaceUid=<gen:0>, path=top.kgoogle.test.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=top.kgoogle.test.user)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity top.kgoogle.test.user [OPTIMISTIC]: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@73aff8f1]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pwd
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : level
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=top.kgoogle.test.user)
+    - Returns
+       - EntityReturnImpl(entity=top.kgoogle.test.user, querySpaceUid=<gen:0>, path=top.kgoogle.test.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=top.kgoogle.test.user)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity top.kgoogle.test.user [OPTIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity top.kgoogle.test.user: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity top.kgoogle.test.user: select user0_.id as id1_0_0_, user0_.name as name2_0_0_, user0_.pwd as pwd3_0_0_, user0_.level as level4_0_0_ from user user0_ where user0_.id=?
+DEBUG main org.hibernate.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@6d6cb754
+DEBUG main org.hibernate.internal.SessionFactoryRegistry - Registering SessionFactory: d70a0a12-41c2-4d08-b895-cdc9e5f3c210 (<unnamed>)
+DEBUG main org.hibernate.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+DEBUG main org.hibernate.internal.SessionFactoryImpl - Instantiated session factory
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+DEBUG main org.hibernate.cfg.Configuration - Processing hbm.xml files
+DEBUG main org.hibernate.cfg.Configuration - Process annotated classes
+DEBUG main org.hibernate.cfg.Configuration - Processing fk mappings (*ToOne and JoinedSubclass)
+DEBUG main org.hibernate.cfg.Configuration - Processing extends queue
+DEBUG main org.hibernate.cfg.Configuration - Processing extends queue
+DEBUG main org.hibernate.cfg.Configuration - Processing collection mappings
+DEBUG main org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+DEBUG main org.hibernate.cfg.Configuration - Processing association property references
+DEBUG main org.hibernate.cfg.Configuration - Creating tables' unique integer identifiers
+DEBUG main org.hibernate.cfg.Configuration - Processing foreign key constraints
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: kgoogle_top.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [level, name, id, pwd]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
+DEBUG main org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+DEBUG main org.hibernate.internal.NamedQueryRepository - Checking 0 named HQL queries
+DEBUG main org.hibernate.internal.NamedQueryRepository - Checking 0 named SQL queries
+DEBUG main org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: select count(*) from top.kgoogle.test.user where name = ? and pwd = ? and level  < ?
+DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     \-[DOT] Node: '.'
+    |  |        +-[DOT] Node: '.'
+    |  |        |  +-[DOT] Node: '.'
+    |  |        |  |  +-[IDENT] Node: 'top'
+    |  |        |  |  \-[IDENT] Node: 'kgoogle'
+    |  |        |  \-[IDENT] Node: 'test'
+    |  |        \-[IDENT] Node: 'user'
+    |  \-[SELECT] Node: 'select'
+    |     \-[COUNT] Node: 'count'
+    |        \-[ROW_STAR] Node: '*'
+    \-[WHERE] Node: 'where'
+       \-[AND] Node: 'and'
+          +-[AND] Node: 'and'
+          |  +-[EQ] Node: '='
+          |  |  +-[IDENT] Node: 'name'
+          |  |  \-[PARAM] Node: '?'
+          |  \-[EQ] Node: '='
+          |     +-[IDENT] Node: 'pwd'
+          |     \-[PARAM] Node: '?'
+          \-[LT] Node: '<'
+             +-[IDENT] Node: 'level'
+             \-[PARAM] Node: '?'
+
+DEBUG main org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+DEBUG main org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+DEBUG main org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : top.kgoogle.test.user (<no alias>) -> user0_
+DEBUG main org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : {synthetic-alias} -> {synthetic-alias}
+DEBUG main org.hibernate.hql.internal.ast.tree.DotNode - getDataType() : name -> org.hibernate.type.StringType@7722c3c3
+DEBUG main org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : {synthetic-alias}.name -> user0_.name
+WARN main org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 57 in HQL: [select count(*) from top.kgoogle.test.user where name = ? and pwd = ? and level  < ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+DEBUG main org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : {synthetic-alias} -> {synthetic-alias}
+DEBUG main org.hibernate.hql.internal.ast.tree.DotNode - getDataType() : pwd -> org.hibernate.type.StringType@7722c3c3
+DEBUG main org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : {synthetic-alias}.pwd -> user0_.pwd
+WARN main org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 69 in HQL: [select count(*) from top.kgoogle.test.user where name = ? and pwd = ? and level  < ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+DEBUG main org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : {synthetic-alias} -> {synthetic-alias}
+DEBUG main org.hibernate.hql.internal.ast.tree.DotNode - getDataType() : level -> org.hibernate.type.IntegerType@2667f029
+DEBUG main org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : {synthetic-alias}.level -> user0_.level
+WARN main org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 84 in HQL: [select count(*) from top.kgoogle.test.user where name = ? and pwd = ? and level  < ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+DEBUG main org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+DEBUG main org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} ( count * ) ) ( FromClause{level=1} user user0_ ) ( where ( and ( and ( = ( user0_.name {synthetic-alias} name ) ? ) ( = ( user0_.pwd {synthetic-alias} pwd ) ? ) ) ( < ( user0_.level {synthetic-alias} level ) ? ) ) ) )
+DEBUG main org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [user user0_]
+DEBUG main org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[COUNT] CountNode: 'count'
+    |  |  \-[ROW_STAR] SqlNode: '*'
+    |  \-[SELECT_COLUMNS] SqlNode: ' as col_0_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=top.kgoogle.test.user}}
+    \-[WHERE] SqlNode: 'where'
+       \-[AND] SqlNode: 'and'
+          +-[AND] SqlNode: 'and'
+          |  +-[EQ] BinaryLogicOperatorNode: '='
+          |  |  +-[DOT] DotNode: 'user0_.name' {propertyName=name,dereferenceType=PRIMITIVE,getPropertyPath=name,path={synthetic-alias}.name,tableAlias=user0_,className=top.kgoogle.test.user,classAlias=null}
+          |  |  |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  |  |  \-[IDENT] IdentNode: 'name' {originalText=name}
+          |  |  \-[PARAM] ParameterNode: '?' {ordinal=0, expectedType=org.hibernate.type.StringType@7722c3c3}
+          |  \-[EQ] BinaryLogicOperatorNode: '='
+          |     +-[DOT] DotNode: 'user0_.pwd' {propertyName=pwd,dereferenceType=PRIMITIVE,getPropertyPath=pwd,path={synthetic-alias}.pwd,tableAlias=user0_,className=top.kgoogle.test.user,classAlias=null}
+          |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |     |  \-[IDENT] IdentNode: 'pwd' {originalText=pwd}
+          |     \-[PARAM] ParameterNode: '?' {ordinal=1, expectedType=org.hibernate.type.StringType@7722c3c3}
+          \-[LT] BinaryLogicOperatorNode: '<'
+             +-[DOT] DotNode: 'user0_.level' {propertyName=level,dereferenceType=PRIMITIVE,getPropertyPath=level,path={synthetic-alias}.level,tableAlias=user0_,className=top.kgoogle.test.user,classAlias=null}
+             |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+             |  \-[IDENT] IdentNode: 'level' {originalText=level}
+             \-[PARAM] ParameterNode: '?' {ordinal=2, expectedType=org.hibernate.type.IntegerType@2667f029}
+
+DEBUG main org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: select count(*) from top.kgoogle.test.user where name = ? and pwd = ? and level  < ?
+DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select count(*) as col_0_0_ from user user0_ where user0_.name=? and user0_.pwd=? and user0_.level<?
+DEBUG main org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+DEBUG main org.hibernate.SQL -
+    select
+        count(*) as col_0_0_
+    from
+        user user0_
+    where
+        user0_.name=?
+        and user0_.pwd=?
+        and user0_.level<?
+DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtaining JDBC connection
+DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtained JDBC connection
+DEBUG main org.hibernate.loader.Loader - Result set row: 0
+DEBUG main org.hibernate.loader.Loader - Result row:

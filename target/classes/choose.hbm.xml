@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="top.kgoogle.data.choose" >
+		<composite-id>
+			<key-property name="bookID" type="int"/>
+			<key-property name="userID" type="int"/>
+		</composite-id>
+	<property name="begin" type="string" />
+	<property name="end" type="string" />
+	</class>
+</hibernate-mapping>

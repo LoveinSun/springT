@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="top.kgoogle.data.isstud" >
+		<id name="id" type="int" >
+			<generator class="assigned" />
+		</id>
+	<property name="name" type="string" />
+	<property name="sex" type="string" />
+	<property name="nation" type="string" />
+		<property name="birthday" type="string" />
+		<property name="dmtB" type="string" />
+		<property name="dmtN" type="string" />
+		<property name="bedN" type="string" />
+		<property name="tel" type="string" />
+		<property name="homeT" type="string" />
+		<property name="address" type="string" />
+	</class>
+</hibernate-mapping>
